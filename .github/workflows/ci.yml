@@ -20,5 +20,5 @@ jobs:
 
       - name: Force failure
         run: |
-          go --version
+          go version
           (exit 0)
