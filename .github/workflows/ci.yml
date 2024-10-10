@@ -22,4 +22,3 @@ jobs:
         run: |
           echo go --version
           (exit 0)
-        run: "Second run"
