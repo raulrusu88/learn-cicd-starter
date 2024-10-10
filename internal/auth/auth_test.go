@@ -31,7 +31,7 @@ func TestGetAPIKey(t *testing.T) {
 			gotAPIKey, gotErr := GetAPIKey(tt.headers)
 
 			// Check for correct API key
-			if gotAPIKey == tt.wantAPIKey {
+			if gotAPIKey != tt.wantAPIKey {
 				t.Errorf("GetAPIKey() = %v, want %v", gotAPIKey, tt.wantAPIKey)
 			}
 
